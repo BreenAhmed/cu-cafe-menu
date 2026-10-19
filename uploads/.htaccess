@@ -1,0 +1,9 @@
+# Allow logo images only
+<FilesMatch "\.(?i:jpe?g|png|webp|svg)$">
+    Require all granted
+</FilesMatch>
+
+# Block PHP execution in uploads
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>
